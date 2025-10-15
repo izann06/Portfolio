@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contacto - Izan Marcos</title>
+  <link rel="stylesheet" href="styles/style.css" />
+</head>
+<body>
+  <!-- MENÚ -->
+  <header class="navbar">
+    <nav class="nav-links">
+      <a href="index.html">Inicio</a>
+      <a href="proyectos.html">Proyectos</a>
+      <a href="competencias.html">Competencias</a>
+      <a href="cv.html">CV</a>
+      <a href="contacto.html" class="active">Contacto</a>
+    </nav>
+  </header>
+
+  <main class="page contacto-page">
+    <section class="contacto-section">
+      <h1 class="section-title">Ponte en contacto conmigo</h1>
+      <p class="contacto-text">
+        Si quieres colaborar, tienes alguna duda o simplemente quieres saludar, 
+        no dudes en escribirme. ¡Responderé lo antes posible!
+      </p>
+
+      <form class="contacto-form" onsubmit="return enviarFormulario(event)">
+        <input type="text" id="nombre" placeholder="Tu nombre" required />
+        <input type="email" id="email" placeholder="Tu correo electrónico" required />
+        <textarea id="mensaje" rows="5" placeholder="Escribe tu mensaje..." required></textarea>
+        <button type="submit" class="btn-primary">Enviar mensaje</button>
+      </form>
+
+      <div class="qr-section">
+        <p>Escanea el código QR para visitar mi portfolio:</p>
+        <img src="assets/frame.png" alt="QR Portfolio" class="qr-img" />
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer personalizado -->
+<footer class="footer">
+  <div class="footer-content">
+    <div class="footer-social">
+      <a href="https://github.com/izanmarcos" target="_blank" title="GitHub">
+        <img src="assets/githubIcon.png" alt="GitHub" class="footer-icon" />
+      </a>
+      <a href="mailto:izanmarcos@email.com" title="Email">
+        <img src="assets/gmailIcon.jpeg" alt="Email" class="footer-icon" />
+      </a>
+      <a href="https://linkedin.com/in/izanmarcos" target="_blank" title="LinkedIn">
+        <img src="assets/linkedinIcon.jpg" alt="LinkedIn" class="footer-icon" />
+      </a>
+    </div>
+    <p>© 2025 Izan Marcos Martínez | Desarrollador de Software</p>
+    <span class="footer-phrase">"Transformando ideas en código"</span>
+  </div>
+</footer>
+
+  <script>
+    function enviarFormulario(e) {
+      e.preventDefault();
+      alert("Gracias por tu mensaje, " + document.getElementById("nombre").value + ". ¡Te responderé pronto!");
+      e.target.reset();
+      return false;
+    }
+  </script>
+</body>
+</html>

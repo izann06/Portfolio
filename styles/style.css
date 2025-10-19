@@ -55,6 +55,12 @@ html, body {
   background: radial-gradient(circle at center, var(--morado-claro) 0%, var(--negro) 70%);
   text-align: center;
   padding: 0 20px;
+  color: #ffffff
+}
+
+.hero-quote {
+  color:rgb(17, 2, 65);
+  font-size: 18px;
 }
 
 .hero-title {
@@ -64,7 +70,7 @@ html, body {
 
 .hero-title span,
 .highlighted-name {
-  color: var(--morado);
+  color: #141116;
   font-weight: 700;
   font-size: 2.2rem;
   letter-spacing: 1px;
@@ -457,4 +463,48 @@ html, body {
   font-style: italic;
   color: #c084fc;
   font-size: 1.05rem;
+}
+
+
+.footer {
+  background-color: #0a0a0a;
+  padding: 20px 0;
+  text-align: center;
+  color: #fff;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.footer-social {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 8px;
+}
+
+.footer-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  transition: transform 0.3s, filter 0.3s;
+}
+
+.footer-icon:hover {
+  transform: scale(1.1);
+  filter: brightness(1.3);
+}
+
+.footer-phrase {
+  font-size: 0.9rem;
+  color: #c8a2ff;
+  margin-top: 5px;
+  font-style: italic;
 }

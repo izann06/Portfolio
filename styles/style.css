@@ -508,3 +508,132 @@ html, body {
   margin-top: 5px;
   font-style: italic;
 }
+
+/* Responsive: tablets and mobile */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 12px;
+  }
+
+  .nav-links a {
+    margin: 0 10px;
+    font-size: 0.95rem;
+  }
+
+  #hero {
+    height: auto;
+    padding: 100px 16px 40px;
+  }
+
+  .hero-card {
+    flex-direction: column;
+    align-items: center;
+    padding: 22px;
+    gap: 18px;
+  }
+
+  .hero-title {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+
+  .hero-info {
+    align-items: center;
+    text-align: center;
+  }
+
+  .highlighted-name {
+    font-size: 1.6rem;
+  }
+
+  .hero-details {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .hero-description {
+    max-width: 460px;
+    margin: 16px auto;
+  }
+
+  .btn-primary, .btn-secondary, .btn-hero {
+    width: 100%;
+    max-width: 320px;
+  }
+
+  .proyectos-grid {
+    gap: 20px;
+  }
+
+  .proyecto-img {
+    height: 140px;
+  }
+
+  .skill-card {
+    padding: 16px;
+  }
+
+  .footer-icon {
+    width: 32px;
+    height: 32px;
+  }
+
+  .footer {
+    padding: 14px 0;
+  }
+
+  .page {
+    flex: 1 0 auto;
+    min-height: auto;
+    padding: 90px 6%;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav-links a {
+    margin: 0 8px;
+    font-size: 0.9rem;
+  }
+
+  .hero-title {
+    font-size: 1.5rem;
+  }
+
+  .highlighted-name {
+    font-size: 1.2rem;
+    padding: 4px 12px;
+  }
+
+  .hero-photo {
+    width: 100px;
+    height: 100px;
+  }
+
+  .hero-description {
+    font-size: 0.98rem;
+  }
+
+  .btn-primary, .btn-secondary {
+    font-size: 1rem;
+    padding: 10px 16px;
+  }
+
+  .footer-icon {
+    width: 28px;
+    height: 28px;
+  }
+
+  .footer-phrase {
+    font-size: 0.85rem;
+  }
+
+  .page {
+    flex: 1 0 auto;
+    min-height: auto;
+    padding: 80px 5%;
+  }
+
+  .proyecto-img {
+    height: 120px;
+  }
+}
